@@ -5,16 +5,16 @@ class Coffee:
         self.size = size
         self.price = price
 
-        @property
-        def size(self):
-            return self._size
+    @property
+    def size(self):
+        return self._size
         
-        @size.setter
-        def size(self, value):
-            value = value.lower().strip()
-            sizes = ["small", "medium", "large"]
-            if value not in sizes:
-                raise ValueError(f"size must be one of {sizes}.")
+    @size.setter
+    def size(self, value):
+        sizes = ["Small", "Medium", "Large"]
+        if value not in sizes:
+            print("size must be Small, Medium, or Large.")
+        else:
             self._size = value
 
     def tip(self):
