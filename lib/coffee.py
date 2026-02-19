@@ -13,7 +13,8 @@ class Coffee:
     def size(self, value):
         sizes = ["Small", "Medium", "Large"]
         if value not in sizes:
-            print("size must be Small, Medium, or Large.")
+            print("size must be Small, Medium, or Large")
+            self._size = None
         else:
             self._size = value
 
